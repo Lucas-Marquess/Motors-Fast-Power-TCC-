@@ -1,10 +1,13 @@
+body{
+    background-color: black;
+}
+
 a{
     color: white;
-
 }
 
 .fundo{
-    height: 350px;
+    height: 250px;
     background-color: black;
     color: white;
 }
@@ -14,7 +17,8 @@ a{
     border-radius: 5px;
     width: 100px;
     height: 37px;
-    margin-left: 15px;
+    margin-top: 25px;
+    margin-left: 8px;
     cursor: pointer;
     transition: transform 0.5s;
 }
@@ -30,4 +34,58 @@ a{
 
 #pesquisa{
     background-color: white;
+}
+
+/* Card dos Carros */
+.secao-dados {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    column-gap: 10px;
+    
+    background-color: black;
+}
+
+.informacao img {
+    width: 100%;
+    height: 60%;
+    margin-bottom: 20px;
+}
+
+.informacao {
+    text-align: center;
+    margin-top: 10px;
+    background-color: #000;
+    color: #fff;
+    height: 80%;
+    width: 98%;
+    transition: transform 0.5s;
+}
+
+.informacao:hover {
+    transform: scale(1.1);
+}
+.titulo {
+    margin-bottom: 15px;
+    color: goldenrod;
+}
+.secao-paragrafo {
+    font-size: 15px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 90px;
+}
+
+.card{
+    margin-left: 170px;
+    margin-bottom: 40px;
+}
+
+.botao1{
+    border-radius: 5px;
+    border: 2px solid blue;
+    width: 100px;
+    height: 37px;
+    cursor: pointer;
 }
