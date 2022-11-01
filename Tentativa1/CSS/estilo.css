@@ -1,0 +1,33 @@
+a{
+    color: white;
+    margin-left:  120px;
+}
+
+.fundo{
+    height: 350px;
+    background-color: black;
+    color: white;
+}
+
+.butao{
+    border: 2px solid blue;
+    border-radius: 5px;
+    width: 100px;
+    height: 37px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: transform 0.5s;
+}
+
+.butao:hover{
+    transform: scale(1.4);
+}
+
+.submit{
+    background-color: black;
+    color: white;
+}
+
+#pesquisa{
+    background-color: white;
+}
