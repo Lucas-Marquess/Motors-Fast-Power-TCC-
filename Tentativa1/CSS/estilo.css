@@ -73,6 +73,7 @@ a{
 .botao1{
     border-radius: 10px;
     cursor: pointer;
+    padding-bottom: 50px;
 }
 
 .submit{
