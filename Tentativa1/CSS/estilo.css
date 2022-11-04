@@ -1,5 +1,13 @@
 body{
-    background-color: #725436;
+    background: linear-gradient(180deg, rgba(161,155,155,1) 77%, rgba(203,196,196,1) 100%, rgba(204,201,201,1) 100%);
+}
+
+.menu{
+    background-color: black;
+}
+
+.Menu{
+    color: white;
 }
 
 a{
@@ -14,7 +22,7 @@ a{
 
 .principal{
     padding: 60px;
-    background-color: darkgray;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 54%, rgba(102,101,101,1) 100%);
     color: white;
     margin-top: 3em;
 }
@@ -27,7 +35,7 @@ a{
     grid-template-rows: repeat(1, 1fr);
     column-gap: 10px;
     padding-top: 25px;
-    background-color: rgb(67, 65, 65);
+    background: linear-gradient(180deg, rgba(102,101,101,1) 70%, rgba(144,143,143,1) 100%, rgba(161,155,155,1) 100%);
 }
 
 .informacao img {
@@ -54,10 +62,12 @@ a{
 .informacao:hover {
     transform: scale(1.1);
 }
+
 .titulo {
     margin-bottom: 15px;
     color: goldenrod;
 }
+
 .secao-paragrafo {
     font-size: 15px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
