@@ -7,13 +7,13 @@ a{
 }
 
 .imgLogo{
-    height: 170px;
+    height: px;
     width: 210px;
 
 }
 
 .principal{
-    padding: 20px;
+    padding: 60px;
     background-color: darkgray;
     color: white;
     margin-top: 3em;
@@ -73,4 +73,12 @@ a{
 .botao1{
     border-radius: 10px;
     cursor: pointer;
+}
+
+.submit{
+    border-radius: 5px;
+    width: 94px;
+    border: 2px solid white;
+    background-color: #000;
+    color: white;
 }
