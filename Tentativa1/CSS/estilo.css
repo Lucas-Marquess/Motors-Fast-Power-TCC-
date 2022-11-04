@@ -6,6 +6,12 @@ a{
     color: white;
 }
 
+.imgLogo{
+    height: 170px;
+    width: 210px;
+
+}
+
 .principal{
     padding: 20px;
     background-color: darkgray;
