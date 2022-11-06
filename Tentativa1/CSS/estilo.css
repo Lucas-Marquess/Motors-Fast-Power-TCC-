@@ -1,32 +1,36 @@
+@charset "UTF-8";
+
 body{
-    background: linear-gradient(180deg, rgba(161,155,155,1) 77%, rgba(203,196,196,1) 100%, rgba(204,201,201,1) 100%);
-}
-
-.menu{
-    background-color: black;
-}
-
-.Menu{
-    color: white;
+    background: linear-gradient(180deg, rgb(63, 61, 61) 77%, rgb(48, 46, 46) 100%, rgba(204,201,201,1) 100%);
 }
 
 a{
-    color: white;
+    color: #fff;
 }
 
-.imgLogo{
-    height: px;
-    width: 210px;
-
+.cabecalho{
+    background-image: url(../IMG/carroDeFundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 15em;
 }
 
-.principal{
-    padding: 60px;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(29,29,29,1) 54%, rgba(102,101,101,1) 100%);
-    color: white;
-    margin-top: 3em;
+.bemVindo {
+    text-align: center;
+    color: #fff;
+    padding-top: 6em;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.paragrafo-inicial {
+    text-align: center;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-left: 9em;
+    margin-right: 9em;
+    margin-bottom: 5px;
+}
 
 /* Card dos Carros */
 .secao-dados {
@@ -35,7 +39,7 @@ a{
     grid-template-rows: repeat(1, 1fr);
     column-gap: 10px;
     padding-top: 25px;
-    background: linear-gradient(180deg, rgba(102,101,101,1) 70%, rgba(144,143,143,1) 100%, rgba(161,155,155,1) 100%);
+    background: linear-gradient(180deg, rgba(102,101,101,1) 70%, rgb(68, 66, 66) 100%, rgba(161,155,155,1) 100%);
 }
 
 .informacao img {
@@ -92,4 +96,38 @@ a{
     border: 2px solid white;
     background-color: #000;
     color: white;
+}
+
+.titulo-local {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.iframe {
+    margin-left: 10em;
+    margin-bottom: 3em;
+}
+
+.botoes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin-left: 15em;
+    color: #fff;
+    padding-bottom: 20px;
+}
+
+.btn-direto {
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+}
+
+.rodape {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    padding-bottom: 10px;
+    text-align: center;
 }
