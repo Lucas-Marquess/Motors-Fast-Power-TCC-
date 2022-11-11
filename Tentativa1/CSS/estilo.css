@@ -1,18 +1,32 @@
 @charset "UTF-8";
 
-body{
-    background: linear-gradient(180deg, rgb(63, 61, 61) 77%, rgb(48, 46, 46) 100%, rgba(204,201,201,1) 100%);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-a{
+body{
+    font-size: 1.3em;
+    font-family: 'oswald' sans-serif;
+        background: linear-gradient(
+            180deg,
+            rgb(63, 61, 61) 77%,
+            rgb(48, 46, 46) 100%,
+            rgba(204, 201, 201, 1) 100%
+        );
+}
+
+a {
     color: #fff;
 }
 
-.cabecalho{
+.cabecalho {
     background-image: url(../IMG/carroDeFundo.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    padding-bottom: 15em;
+    padding-bottom: 25em;
+    margin-bottom: 5em;
 }
 
 .bemVindo {
@@ -25,79 +39,84 @@ a{
 .paragrafo-inicial {
     text-align: center;
     color: #fff;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+        sans-serif;
     font-size: 18px;
     margin-left: 9em;
     margin-right: 9em;
     margin-bottom: 5px;
 }
 
+
 /* Card dos Carros */
-.secao-dados {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    column-gap: 10px;
-    padding-top: 25px;
-    background: linear-gradient(180deg, rgba(102,101,101,1) 70%, rgb(68, 66, 66) 100%, rgba(161,155,155,1) 100%);
-}
-
-.informacao img {
+.img-card{
     width: 100%;
-    height: 60%;
-    margin-bottom: 20px;
-    border-radius: 20px;
+    height: 100%;
 }
 
-.informacao {
-    text-align: center;
-    margin-top: 10px;
-    background-color: #000;
-    color: #fff;
-    height: 80%;
-    width: 98%;
-    transition: transform 0.5s;
-    padding: 10px;
-    margin-left: 5px;
-    padding-bottom: 6em;
-    border-radius: 20px;
-}
-
-.informacao:hover {
-    transform: scale(1.1);
-}
-
-.titulo {
-    margin-bottom: 15px;
-    color: goldenrod;
-}
-
-.secao-paragrafo {
-    font-size: 15px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 90px;
-}
-
-.botao1:hover {
-    transform: scale(1.1);
-}
-
-.botao1{
-    border-radius: 10px;
-    cursor: pointer;
-    padding-bottom: 50px;
-}
-
-.submit{
+.btn-card{
+    display: inline-block;
     border-radius: 5px;
-    width: 94px;
-    border: 2px solid white;
-    background-color: #000;
+    background-color: black;
     color: white;
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    text-decoration: none;
 }
 
+.btn-card:hover{
+    opacity: 0.8;
+}
+
+#main-header{
+    height: 25vh;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#main-header p span{
+    color: #b50d10;
+    font-size: 2rem;
+}
+
+.container{
+    max-width: 1100px;
+    margin: auto;
+    overflow: auto;
+    padding: 0 2rem;
+}
+
+.card{
+    border: 1px solid #fff;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+    background-image: linear-gradient(to right, #fff, rgb(71, 69, 69));
+    margin-bottom: 2rem;
+}
+
+.card h3{
+    margin-top: 2rem;
+}
+
+.card .img-card{
+    height: 400px;
+}
+
+.card>div{
+    padding: 2rem;
+}
+
+.card:nth-child(even) .img-card{
+    order: 2;
+}
+
+/* Area do Mapa */
 .titulo-local {
     text-align: center;
     color: #fff;
@@ -105,29 +124,119 @@ a{
 }
 
 .iframe {
-    margin-left: 10em;
+    margin-left: 25em;
     margin-bottom: 3em;
 }
 
-.botoes {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(2, 1fr);
-    margin-left: 15em;
+/* Rodapé */
+.footer {
     color: #fff;
-    padding-bottom: 20px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
 }
 
-.btn-direto {
+.footer i {
+    font-size: 1rem;
+    padding: 0.3rem;
+}
+
+.footer a {
+    color: #fff;
+}
+
+.contato-info {
+    width: 8%;
+}
+
+.container-links {
+    width: 10%;
+}
+
+.titulo-inicial {
+    margin-bottom: 2rem;
+}
+
+.titulo-inicial h2 {
+    margin-bottom: 0.5rem;
+}
+
+.contato-info p {
+    margin-bottom: 1rem;
+}
+
+.contato-info p i {
+    background-color: transparent;
+    padding: 0;
+}
+
+.redes-sociais p {
+    margin-bottom: 1rem;
+}
+
+.logos {
+    margin-top: 1rem;
+    display: flex;
+    gap: 10px;
+}
+
+.logos i {
+    padding: 1rem;
+}
+
+.container-links h4 {
+    text-transform: uppercase;
+    margin-bottom: 3rem;
+}
+
+.container-links a {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
     text-decoration: none;
-    text-align: center;
-    color: #fff;
+    position: relative;
 }
 
-.rodape {
+a:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: #fff;
+    visibility: hidden;
+    -webkit-transform: scale(0);
+    transform: scale(0);
+    transition: all 0.2s ease-in-out 0s;
+}
+
+a:hover:before {
+    visibility: visible;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+}
+
+.numero-telefone {
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.logos img {
+    margin: 4px;
+    width: 25%;
+    height: 25%;
+    margin-left: 20px;
+}
+
+.copyright {
     background-color: #000;
     color: #fff;
-    padding: 20px;
-    padding-bottom: 10px;
-    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 9.5rem;
+    font-size: 15px;
 }

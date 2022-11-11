@@ -9,6 +9,11 @@ h2 {
     margin-top: 3em;
 }
 
+img {
+    width: 60%;
+    height: 60%;
+}
+
 .carrosClassicos {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
