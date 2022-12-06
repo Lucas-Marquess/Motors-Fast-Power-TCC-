@@ -15,31 +15,6 @@ body {
     background: #0000004d;
 }
 
-.voltar-button {
-    display: flex;
-    align-items: center;
-    padding-bottom: 33rem;
-    margin-right: 4rem;
-}
-
-.voltar-button button {
-    border: none;
-    background-color: #ff0000;
-    padding: 0.4rem 1rem;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.voltar-button button:hover {
-    background-color: #d40000;
-}
-
-.voltar-button button a {
-    text-decoration: none;
-    font-weight: 500;
-    color: #fff;
-}
-
 .container {
     width: 80%;
     height: 90vh;
