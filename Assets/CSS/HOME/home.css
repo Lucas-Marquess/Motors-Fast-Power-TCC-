@@ -63,9 +63,6 @@ p {
     color: crimson;
 }
 
-
-
-
 #header {
     position: fixed;
     z-index: 1000;
@@ -223,12 +220,14 @@ p {
     opacity: 0.7;
     z-index: -1;
 }
+
 #hero .hero {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 50px;
     justify-content: flex-start;
 }
+
 #hero h1 {
     display: block;
     width: fit-content;
@@ -635,7 +634,6 @@ section {
     font-size: 1.8rem;
 }
 
-
 @keyframes headerBtn_puls {
     0% {
         opacity: 1;
@@ -748,6 +746,9 @@ section {
         padding-left: 20px;
     }
 
+    .footer p {
+        font-size: 2rem;
+    }
 }
 
 @media only screen and (min-width: 1200px) {
