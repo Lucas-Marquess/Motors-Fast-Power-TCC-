@@ -36,10 +36,6 @@ section {
     padding: 2rem 9%;
 }
 
-a {
-    text-decoration: none;
-}
-
 .heading {
     padding-bottom: 2rem;
     text-align: center;
@@ -669,7 +665,7 @@ footer {
     padding-top: 2.5rem;
     margin-top: 2rem;
     border-top: var(--border);
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-top: 5rem;
     color: #fff;
 }
@@ -678,7 +674,6 @@ footer {
     html {
         font-size: 55%;
     }
-
 
     .home {
         background-position: 10%;
@@ -783,6 +778,7 @@ footer {
         padding-top: 2rem;
         padding-right: 1rem;
     }
+
 }
 
 @media (max-width: 450px) {
@@ -813,4 +809,5 @@ footer {
     .title-electric {
         font-size: 3rem;
     }
+
 }
