@@ -269,7 +269,7 @@ main.cards section.card {
     align-items: center;
     text-align: center;
     background-color: #29323c;
-    padding: 1rem 1.5rem;
+    padding: 1rem 5.5rem;
     border-radius: 8px;
     max-height: 468px;
     margin-left: 32px;
@@ -281,15 +281,8 @@ main.cards section.card:first-child {
     margin-left: 0;
 }
 
-main.cards section.card .icon {
-    width: 64px;
-    height: 264px;
-}
-
 main.cards section.card img {
-    width: 500%;
-    height: 80%;
-    margin-left: -12rem;
+    width: 50%;
     margin-top: 2rem;
     border-radius: 3rem;
 }
@@ -329,7 +322,7 @@ main.cards section.card button:hover {
 }
 
 .cnh-btn2 {
-    margin-top: -1rem;
+    margin-top: 0.5rem;
 }
 
 #about .about {
